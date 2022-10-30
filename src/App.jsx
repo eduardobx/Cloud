@@ -98,6 +98,10 @@ function App() {
       linkFund =
         "https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
       break;
+      default: 
+      linkFund =
+        "https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+     
   }
   document.body.style = `background-image: url(${linkFund})`;
 
