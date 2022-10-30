@@ -42,7 +42,7 @@ function App() {
       linkFund =
         "https://images.pexels.com/photos/13511276/pexels-photo-13511276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
       break;
-    case "03d":
+    case "04n":
       linkFund =
         "https://images.pexels.com/photos/12262726/pexels-photo-12262726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
       break;
@@ -50,7 +50,7 @@ function App() {
       linkFund =
         "https://images.pexels.com/photos/12903460/pexels-photo-12903460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
       break;
-    case "04n":
+    case "03d":
       linkFund =
         "https://images.pexels.com/photos/11513041/pexels-photo-11513041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
       break;
@@ -139,7 +139,7 @@ function App() {
             <i class="fa-solid fa-feather"></i> <strong>pressure :</strong>{" "}
             {time.main?.pressure} mb
           </li>
-        </ul>
+        </ul> 
       </div>
       <button onClick={onChnge}>ºC/ºFh</button>
     </div>
