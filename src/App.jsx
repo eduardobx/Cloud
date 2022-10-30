@@ -23,7 +23,7 @@ function App() {
   const onChnge = () => {
     setChange(!change);
   };
-  let linkFund = "";
+  
 
   // switch (fundTime) {
   //   case "01d":
@@ -103,38 +103,41 @@ function App() {
   //       "https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
   // }
-  for (let i = 10; i <= 100; i += 10) {
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 10) {
+  console.log((time.main?.temp - 273.15).toFixed(1))
+  console.log(img.img10)
+  let linkFund = "";
+    if (`${(time.main?.temp - 273.15).toFixed(1)}` <= 10){
       linkFund = img.img1;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 20) {
+    if (10<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=20) {
       linkFund = img.img2;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 30) {
+    if (20<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=30) {
       linkFund = img.img3;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 40) {
+    if (30<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=40) {
       linkFund = img.img4;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 50) {
+    if (40<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=50) {
       linkFund = img.img5;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 60) {
+    if (50<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=60) {
       linkFund = img.img6;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 70) {
+    if ( 60<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=70) {
       linkFund = img.img7;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 80) {
+    if (70<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=80) {
       linkFund = img.img8;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 90) {
+    if (80<`${(time.main?.temp - 273.15).toFixed(1)}` && `${(time.main?.temp - 273.15).toFixed(1)}`<=90) {
       linkFund = img.img9;
     }
-    if (`${(time.main?.temp - 273.15).toFixed(1)}` < 100) {
+    if (90<`${(time.main?.temp - 273.15).toFixed(1)}`  && `${(time.main?.temp - 273.15).toFixed(1)}`<=100) {
       linkFund = img.img10;
     }
-  }
+  
+  console.log(  linkFund)
 
   document.body.style = `background-image: url(${linkFund})`;
 
